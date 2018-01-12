@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  cabal-parser:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cabal-parser:latest
+    networks:
+      - cabal-parser
+    ports:
+      - "5000"
+
+networks:
+  cabal-parser:
