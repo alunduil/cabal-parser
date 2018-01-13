@@ -1,11 +1,10 @@
 module Main (main) where
 
+import API
+import Environment
 import Network.Wai.Handler.Warp (run)
 import Servant (Application, Proxy (Proxy), serve)
 import System.Envy (decodeEnv)
-
-import API
-import Environment
 
 main :: IO ()
 main = either fail (flip run application . port) =<< decodeEnv
