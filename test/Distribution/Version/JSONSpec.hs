@@ -17,3 +17,4 @@ spec =
     context "encodes examples" $
       do let s = "\"==1.1.*\"" in it s $ encode (WildcardVersion $ mkVersion [1,1]) `shouldBe` pack s
          let s = "\">=4.9 && <4.11\"" in it s $ encode (IntersectVersionRanges (UnionVersionRanges (ThisVersion $ mkVersion [4,9]) (LaterVersion $ mkVersion [4,9])) (EarlierVersion $ mkVersion [4,11])) `shouldBe` pack s
+         let s = "\"*\"" in it s $ encode anyVersion `shouldBe` pack s
