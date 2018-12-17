@@ -97,7 +97,7 @@ test-suite cabal-parser-tests
     , base       >= 4.9 && < 4.11
     , bytestring == 0.10.*
     , Cabal      == 2.0.*
-    , hspec      == 2.4.*
+    , hspec      >= 2.4 && < 2.7
     , pretty     == 1.1.*
     , text       == 1.2.*
 
