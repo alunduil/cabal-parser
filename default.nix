@@ -9,8 +9,8 @@ mkDerivation {
   isLibrary = false;
   isExecutable = true;
   executableHaskellDepends = [
-    aeson base Cabal envy pretty servant-server text utf8-string
-    wai-extra warp
+    aeson base bytestring Cabal envy pretty servant-server text
+    utf8-string wai-extra warp
   ];
   testHaskellDepends = [
     aeson base bytestring Cabal hspec pretty text
