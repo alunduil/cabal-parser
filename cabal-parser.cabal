@@ -91,7 +91,7 @@ test-suite cabal-parser-tests
     , Distribution.Version.JSONSpec
 
   build-tool-depends:
-      hspec-discover:hspec-discover >= 2.4 && < 2.7
+      hspec-discover:hspec-discover >= 2.4 && < 2.8
 
   build-depends:
       aeson      >= 1.1 && < 1.5
