@@ -1,5 +1,5 @@
 name:                cabal-parser
-version:             0.1.0.0
+version:             0.1.1.0
 synopsis:            Tiny Web Service for Parsing Cabal Files
 
 description:         
